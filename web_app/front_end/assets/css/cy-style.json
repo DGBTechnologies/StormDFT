@@ -1,0 +1,313 @@
+{
+	"cyInit": [
+		{
+			"selector": "node",
+			"css": {
+				"label": "data(label)",
+				"height": 59,
+				"width": 48,
+				"text-wrap": "ellipsis",
+				"text-max-width": 200,
+				"shape": "rectangle",
+				"background-color": "white",
+				"background-fit": "cover"
+			}
+		},
+		{
+			"selector": "edge",
+			"css": {
+				"label": "data(label)",
+				"curve-style": "taxi",
+				"target-arrow-shape": "triangle",
+				"width": 2,
+				"line-color": "#42adf5",
+				"target-arrow-color": "black"
+			}
+		},
+		{
+			"selector": "edge.taxi",
+			"style": {
+				"curve-style": "taxi",
+				"taxi-direction": "upward",
+				"taxi-turn": "100px",
+				"taxi-turn-min-distance": "60px"
+			}
+		},
+		{
+			"selector": "edge.triggerEdge",
+			"css": {
+				"line-style": "dashed"
+			}
+		},
+		{
+			"selector": "node.be",
+			"css": {
+				"height": 42,
+				"width": 42,
+				"background-image": "../assets/images/be.png"
+			}
+		},
+		{
+			"selector": "node.and",
+			"css": {
+				"height": 66.65,
+				"width": 50,
+				"background-image": "../assets/images/and.png"
+			}
+		},
+		{
+			"selector": "node.or",
+			"css": {
+				"height": 66.65,
+				"width": 50,
+				"background-image": "../assets/images/or.png"
+			}
+		},
+		{
+			"selector": "node.vot",
+			"css": {
+				"height": 66.65,
+				"width": 50,
+				"background-image": "../assets/images/vot.png"
+			}
+		},
+		{
+			"selector": "node.pand",
+			"css": {
+				"height": 66.65,
+				"width": 50,
+				"background-image": "../assets/images/pand.png"
+			}
+		},
+		{
+			"selector": "node.por",
+			"css": {
+				"height": 66.65,
+				"width": 50,
+				"background-image": "../assets/images/por.png"
+			}
+		},
+		{
+			"selector": "node.pdep",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/pdep.png"
+			}
+		},
+		{
+			"selector": "node.fdep",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/fdep.png"
+			}
+		},
+		{
+			"selector": "node.spare",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/spare.png"
+			}
+		},
+		{
+			"selector": "node.seq",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/seq.png"
+			}
+		},
+		{
+			"selector": "node.block",
+			"style": {
+				"shape": "triangle",
+				"height": 66.65,
+				"width": 50,
+				"z-index": 0,
+				"background-color": "white",
+				"border-color": "grey",
+				"border-width": 2
+			}
+		},
+		{
+			"selector": "node.containEvent",
+			"css": {
+				"color": "blue"
+			}
+		},
+		{
+			"selector": "node.avoidEvent",
+			"css": {
+				"color": "red"
+			}
+		},
+		{
+			"selector": ":parent",
+			"css": {
+				"background-opacity": 0.33,
+				"border-width": 3,
+				"border-color": "#585858",
+				"border-style": "dashed",
+				"z-compound-depth": "auto"
+			}
+		},
+		{
+			"selector": "node.cy-expand-collapse-expanded-node",
+			"css": {
+				"background-color": ""
+			}
+		},
+		{
+			"selector": ".eh-handle",
+			"style": {
+				"background-color": "red",
+				"width": 12,
+				"height": 12,
+				"shape": "ellipse",
+				"overlay-opacity": 0,
+				"border-width": 12,
+				"border-opacity": 0
+			}
+		},
+		{
+			"selector": "node.topLevel",
+			"css": {
+				"font-weight": "bold",
+				"color": "red",
+				"font-size": "25"
+			}
+		},
+		{
+			"selector": ".eh-hover",
+			"style": {
+				"background-color": "red"
+			}
+		},
+		{
+			"selector": ".eh-source",
+			"style": {
+				"border-width": 2,
+				"border-color": "red"
+			}
+		},
+		{
+			"selector": ".eh-target",
+			"style": {
+				"border-width": 2,
+				"border-color": "red"
+			}
+		},
+		{
+			"selector": ".eh-preview, .eh-ghost-edge",
+			"style": {
+				"line-color": "red",
+				"target-arrow-color": "red",
+				"source-arrow-color": "red"
+			}
+		},
+		{
+			"selector": ".eh-ghost-edge.eh-preview-active",
+			"style": {
+				"opacity": 0
+			}
+		}
+	],
+	"cyPanZoom": {
+		"zoomFactor": 0.05,
+		"zoomDelay": 45,
+		"minZoom": 0.1,
+		"maxZoom": 10,
+		"fitPadding": 50,
+		"panSpeed": 10,
+		"panDistance": 10,
+		"panDragAreaSize": 75,
+		"panMinPercentSpeed": 0.25,
+		"panInactiveArea": 8,
+		"panIndicatorMinOpacity": 0.5,
+		"zoomOnly": false,
+		"fitSelector": "undefined",
+		"fitAnimationDuration": 1000,
+		"zoomInIcon": "fa fa-plus-circle",
+		"zoomOutIcon": "fa fa-minus-circle",
+		"resetIcon": "fa fa-refresh"
+	},
+	"cyNavigator": {
+		"container": ".cytoscape-navigator",
+		"viewLiveFramerate": 0,
+		"thumbnailEventFramerate": 30,
+		"thumbnailLiveFramerate": false,
+		"dblClickDelay": 200,
+		"removeCustomContainer": true,
+		"rerenderDelay": 100
+	},
+	"cyGrid": {
+		"snapToGridOnRelease": true,
+		"snapToGridDuringDrag": false,
+		"snapToAlignmentLocationOnRelease": false,
+		"snapToAlignmentLocationDuringDrag": false,
+		"distributionGuidelines": false,
+		"geometricGuideline": false,
+		"initPosAlignment": false,
+		"centerToEdgeAlignment": false,
+		"resize": false,
+		"parentPadding": false,
+		"drawGrid": true,
+		"gridSpacing": 15,
+		"snapToGridCenter": true,
+		"zoomDash": true,
+		"panGrid": false,
+		"gridStackOrder": -1,
+		"gridColor": "#dedede",
+		"lineWidth": 1.0,
+		"guidelinesStackOrder": 4,
+		"guidelinesTolerance": 2.00,
+		"guidelinesStyle": {
+			"strokeStyle": "#8b7d6b",
+			"geometricGuidelineRange": 400,
+			"range": 100,
+			"minDistRange": 10,
+			"distGuidelineOffset": 10,
+			"horizontalDistColor": "#ff0000",
+			"verticalDistColor": "#00ff00",
+			"initPosAlignmentColor": "#0000ff",
+			"lineDash": [
+				0,
+				0
+			],
+			"horizontalDistLine": [
+				0,
+				0
+			],
+			"verticalDistLine": [
+				0,
+				0
+			],
+			"initPosAlignmentLine": [
+				0,
+				0
+			]
+		},
+		"parentSpacing": -1
+	},
+	"cyEdgeHandling": {
+		"preview": true,
+		"hoverDelay": 100,
+		"handleNodes": "node[!parent]",
+		"snap": false,
+		"snapThreshold": 50,
+		"snapFrequency": 15,
+		"noEdgeEventsInDraw": false,
+		"disableBrowserGestures": true,
+		"handleInDrawMode": false
+	},
+	"cyExpandCollapse": {
+		"layoutBy": null,
+		"fisheye": false,
+		"animate": false,
+		"undoable": false,
+		"cueEnabled": false,
+		"zIndex": 0
+	}
+}

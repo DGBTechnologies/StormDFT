@@ -1,0 +1,277 @@
+.heading {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.addIcon {
+    position: relative;
+    top: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.redColor {
+    color: rgb(255, 31, 31);
+}
+
+.blueColor {
+    color: rgb(45, 45, 255);
+}
+
+.editDeleteIcon {
+    font-size: 18px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* mandatory field icon */
+.mandatory{
+  color: red;
+  font-size: medium;
+}
+
+
+/* Start Declarations Container CSS */
+
+.declaration-component {
+    height: 42vh;
+    min-height: 210px;
+    float: left;
+    padding: 8px;
+    border: solid rgb(185, 185, 185) 2px;
+}
+
+.init-condition {
+    width: 100%;
+    height: 11vh;
+    min-height: 55px;
+    float: left;
+    padding: 15px 8px 8px 8px;
+    border: solid rgb(185, 185, 185) 2px;
+}
+
+.declaration-table-container {
+    height: 33vh;
+    min-height: 165px;
+    overflow: auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #6d6d6d;
+    margin-top: 5px;
+    z-index: 0;
+    position: relative;
+}
+
+
+/* End Declarations Container CSS */
+
+
+/* Start Automata + Labels-Reward + Properties + Composition Conatiner CSS */
+
+.main-area {
+    width: 100%;
+    float: left;
+    height: 95vh;
+    min-height: 475px;
+}
+
+.two-components-container {
+    height: 47.5vh;
+    min-height: 237px;
+    padding: 8px;
+    border: solid rgb(185, 185, 185) 2px;
+}
+
+.two-components-table-container {
+    height: 40vh;
+    min-height: 190px;
+    overflow: auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #6d6d6d;
+    margin-top: 5px;
+    z-index: 0;
+    position: relative;
+}
+
+
+/* Right Side Bar */
+
+.side-container {
+    width: 20%;
+    float: left;
+    height: 95vh;
+    min-height: 475px;
+}
+
+#rightNav {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+}
+
+.navOptions {
+    text-align: center;
+    width: 100%;
+    /* height: 4vh;
+    min-height: 20px; */
+    background-color: rgb(231, 231, 231);
+}
+
+.selectedWindow {
+    background-color: rgb(172, 172, 172);
+}
+
+.notSelectedWindow {
+    background-color: rgb(231, 231, 231);
+}
+
+.declaration {
+    width: 100%;
+    height: 89vh;
+    margin-top: 2vh;
+    text-align: center;
+    width: 100%;
+    min-height: 445px;
+    background-color: rgb(231, 231, 231);
+}
+
+.sidebar-declarations {
+    height: 21%;
+    min-height: 21%;
+    padding: 0px 3px 3px 3px;
+    overflow: auto;
+    margin-top: 4%;
+}
+
+#declarationTab,
+#rewrdsLabelTab,
+#localsTab,
+#globalsTab {
+    cursor: pointer;
+    width: 50%;
+    /* height: 4vh;
+    min-height: 20px; */
+    display: inline-block;
+    color: black;
+    border: 1px solid rgb(185, 185, 185);
+    border-top: 0px;
+    border-left: 0px;
+}
+
+
+/* End Side Bar */
+
+
+/* End Automata + Labels-Reward + Properties Conatiner CSS */
+
+
+/* Start Table CSS (Common: Declarations + Lables + Rewards + Properties + Declaration Side Bar) */
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    font-size: 14px;
+    font-weight: 400;
+    height: 10%;
+    color: black;
+    border: 1px solid rgb(185, 185, 185);
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+	word-wrap: break-word;
+	white-space: pre-line;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+table th {
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    border-top: 0px;
+    position: sticky;
+    top: 0%;
+}
+
+table td {
+    text-align: left;
+    background-color: white;
+}
+
+table td .form-control {
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* End Table CSS */
+
+
+/* Start PopUps CSS */
+
+.popUpHeading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.level1PopUp {
+    z-index: 25;
+}
+
+.level2PopUp {
+    z-index: 35;
+}
+
+.popUp {
+    position: absolute;
+    padding: 20px;
+    border-radius: 7px;
+    background: rgb(231, 231, 231);
+    box-shadow: 0px 0px 5px #6d6d6d;
+    max-height: 88vh;
+    overflow: auto;
+}
+
+.bigPopUp {
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    min-width: 550px;
+}
+
+.mediumPopUp {
+    top: 10%;
+    left: 30%;
+    width: 35%;
+    min-width: 400px;
+}
+
+.smallPopUp {
+    top: 33%;
+    left: 40%;
+    width: 25%;
+    min-width: 300px;
+}
+
+.infoIcon {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+/* End PopUps CSS */
