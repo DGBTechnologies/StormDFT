@@ -10,7 +10,7 @@ RUN apt-get update && apt-get -y upgrade
 
 # gui dependencies
 RUN apt-get -y install nodejs npm
-RUN npm install -g http-server
+RUN npm install -g http-server@13.0.1
 
 COPY web_app /opt/web_app
 RUN chmod +x /opt/web_app/back_end

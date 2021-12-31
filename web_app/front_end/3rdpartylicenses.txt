@@ -1022,6 +1022,9 @@ ISC
 ngx-autofocus-fix
 MIT
 
+ngx-draggable-resize
+MIT
+
 ngx-spinner
 MIT
 
