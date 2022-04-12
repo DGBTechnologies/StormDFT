@@ -23,22 +23,12 @@ Step 1: Clone the repository
 git clone https://github.com/DGBTechnologies/StormDFT.git
 ```
 
-Step 2: Build Docker Image (for window PowerShell will be used)
+Step 2: Build Docker Image
 
 ```
 cd StormDFT 
-```
-
-For Window:
-```
-docker build --platform linux/amd64 -t storm_dft:latest .
-```
-
-For Linux:
-```
 docker build -t storm_dft:latest .
 ```
-
 
 
 Step 3: Create a docker volume of working directory
@@ -46,7 +36,6 @@ Step 3: Create a docker volume of working directory
 ```
 docker volume create --driver local --opt type=none --opt device=$PWD --opt o=bind storm_dft_vol
 ```
-
 
 Step 4: Run Docker Container
 
