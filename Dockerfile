@@ -1,4 +1,4 @@
-FROM movesrwth/stormpy:travis
+FROM movesrwth/stormpy:ci-release
 
 USER root
 WORKDIR /
