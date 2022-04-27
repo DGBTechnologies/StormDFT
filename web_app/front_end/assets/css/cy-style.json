@@ -3,7 +3,7 @@
 		{
 			"selector": "node",
 			"css": {
-				"label": "data(label)",
+				"label": "data(cyLabel)",
 				"height": 59,
 				"width": 48,
 				"text-wrap": "ellipsis",
@@ -37,6 +37,12 @@
 			"selector": "edge.triggerEdge",
 			"css": {
 				"line-style": "dashed"
+			}
+		},
+		{
+			"selector": "edge.failedEdge",
+			"css": {
+				"target-arrow-shape": "none"
 			}
 		},
 
@@ -526,6 +532,51 @@
 
 
 
+
+
+
+
+		
+		{
+			"selector": "node.mutex",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/mutex.png"
+			}
+		},
+		{
+			"selector": "node.mutexOrange",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/mutex_orange.png"
+			}
+		},
+		{
+			"selector": "node.mutexYellow",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/mutex_yellow.png"
+			}
+		},
+		{
+			"selector": "node.mutexGreen",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/mutex_green.png"
+			}
+		},
+		{
+			"selector": "node.mutexRed",
+			"css": {
+				"height": 50,
+				"width": 100,
+				"background-image": "../assets/images/mutex_red.png"
+			}
+		},
 
 
 
