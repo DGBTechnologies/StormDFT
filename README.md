@@ -27,7 +27,7 @@ Step 2: Build Docker Image
 
 ```
 cd StormDFT 
-docker build -t storm_dft:latest .
+docker build --platform=linux/amd64 -t storm_dft:latest .
 ```
 
 
