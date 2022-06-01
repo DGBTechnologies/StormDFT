@@ -17,22 +17,14 @@
 			"selector": "edge",
 			"css": {
 				"label": "data(label)",
-				"curve-style": "taxi",
+				"curve-style": "bezier",
 				"target-arrow-shape": "triangle",
 				"width": 2,
 				"line-color": "#42adf5",
 				"target-arrow-color": "black"
 			}
 		},
-		{
-			"selector": "edge.taxi",
-			"style": {
-				"curve-style": "taxi",
-				"taxi-direction": "upward",
-				"taxi-turn": "100px",
-				"taxi-turn-min-distance": "60px"
-			}
-		},
+		
 		{
 			"selector": "edge.triggerEdge",
 			"css": {
