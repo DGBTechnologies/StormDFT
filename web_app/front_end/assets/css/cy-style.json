@@ -24,7 +24,15 @@
 				"target-arrow-color": "black"
 			}
 		},
-		
+		{
+			"selector": "edge.bezier",
+			"style": {
+				"curve-style": "taxi",
+				"bezier-direction": "upward",
+				"bezier-turn": "100px",
+				"bezier-turn-min-distance": "60px"
+			}
+		},
 		{
 			"selector": "edge.triggerEdge",
 			"css": {

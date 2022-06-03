@@ -1,3 +1,22 @@
+
+
+/* Side Bar Container CSS Start */
+
+.side-bar-container {
+    height: 92vh;
+    min-height: 475px;
+    width: 13%;
+    min-width: 156px;
+    float: left;
+	background-color: rgb(231, 231, 231);
+	border-right: 1px solid rgb(185, 185, 185);
+}
+
+
+/* Side Bar Container CSS End */
+
+
+
 .heading {
     font-size: 18px;
     font-weight: 400;
@@ -99,7 +118,7 @@ textarea {
 .main-area {
     width: 100%;
     float: left;
-    height: 95vh;
+    height: 92vh;
     min-height: 475px;
 }
 
